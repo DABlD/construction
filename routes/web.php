@@ -15,22 +15,21 @@ use Illuminate\Support\Facades\Route;
 
 //JUST ADD '->defaults("group", "Settings")' IF YOU WANT TO GROUP A NAV IN A DROPDOWN
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', "WelcomeController@index")->name("/");
+Route::get('get-quote', "WelcomeController@getQuote")->name('get-quote');
 
-Route::get('/', function(){
-   return redirect()->route('login');
-});
+// Route::get('/', function(){
+//     return redirect()->route('login');
+// });
 
 
 Route::group([
         'middleware' => 'auth',
     ], function() {
-        Route::get('/', "DashboardController@index")->name('dashboard');
+        // Route::get('/', "DashboardController@index")->name('dashboard');
 
 
-        Route::get('/', 'DashboardController@index')
+        Route::get('/dashboard', 'DashboardController@index')
             ->defaults('sidebar', 1)
             ->defaults('icon', 'fas fa-list')
             ->defaults('name', 'Dashboard')
