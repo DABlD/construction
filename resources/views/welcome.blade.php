@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="{{ asset('welcome/fonts/fontawesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('welcome/fonts/flaticon/font/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('welcome/css/style.css') }}">
+
+    <style>
+        .scroller{
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,7 +58,7 @@
                         </li>
                         <li class="nav-item cta-btn2">
                             <a class="nav-link" href="{{ route('get-quote') }}">
-                                <span class="d-inline-block px-4 py-2 border">Quotation</span>
+                                <span class="d-inline-block px-4 py-2 border" style="background-color: beige; font-weight: bold;">Quotation</span>
                             </a>
                         </li>
                     </ul>
@@ -390,18 +396,28 @@
                 </div>
                 <div class="col-md-3">
                     <ul class="list-unstyled footer-link">
-                        <li><span class="mr-3 d-block">Address:</span><span class="text-white">34 Street Name, City Name Here, United States</span></li>
-                        <li><span class="mr-3 d-block">Phone:</span><span class="text-white">+63 987 654 3210</span></li>
-                        <li><span class="mr-3 d-block">E-mail:</span><span class="text-white"><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0e676068614e77617b7c6a61636f6760206d6163">[email&#160;protected]</a></span></li>
+                        <li>
+                            <span class="mr-3 d-block">Address:</span>
+                            <span class="text-white">
+                                Empress St. cor. Duchess St., Empress <br>
+                                Subdivision, Brgy San Isidro, <br>
+                                Antipolo City Rizal, 1870
+                            </span>
+                        </li>
+                        <li>
+                            <span class="mr-3 d-block">Phone:</span>
+                            <span class="text-white">09970848557 / 09270444766 / 09693222077</span>
+                        </li>
+                        <li><span class="mr-3 d-block">E-mail:</span><span class="text-white">plmconstructioncorp@gmail.com</span></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h3 class="text-white">Quick Links</h3>
                     <ul class="list-unstyled footer-link">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Works</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" data-href="home" class="scroller">Home</a></li>
+                        <li><a href="#" data-href="projects" class="scroller">Projects</a></li>
+                        <li><a href="#" data-href="services" class="scroller">Services</a></li>
+                        <li><a href="#" data-href="contact" class="scroller">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
