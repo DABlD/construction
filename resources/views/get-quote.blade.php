@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="{{ asset('welcome/fonts/fontawesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('welcome/fonts/flaticon/font/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('welcome/css/style.css') }}">
+
+    <style>
+        .scroller{
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +28,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand position-absolute" href="{{ asset('/') }}">
-                    <img src="{{ asset('images/test_logo_mini.png') }}" alt="Header Logo">
+                    {{-- <img src="{{ asset('images/test_logo_mini.png') }}" alt="Header Logo"> --}}
+                    <img src="{{ asset('images/logo.png') }}" width="50px" height="50px" alt="Header Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,33 +37,7 @@
                 <div class="collapse navbar-collapse position-relative" id="navbarsExample05">
                     <ul class="navbar-nav mx-auto pl-lg-5 pl-0 d-flex align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                <a class="dropdown-item" href="services.html">Pre-Construction</a>
-                                <a class="dropdown-item" href="services.html">General Construction</a>
-                                <a class="dropdown-item" href="services.html">House Renovation</a>
-                                <a class="dropdown-item" href="services.html">Plumbing</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="works.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item cta-btn2">
-                            <a class="nav-link" href="get-quote.html">
-                                <span class="d-inline-block px-4 py-2 border">Quotation</span>
-                            </a>
+                            <a class="nav-link scroller active" href="{{ route('/') }}" data-href="home">Home</a>
                         </li>
                     </ul>
                 </div>
@@ -166,18 +147,28 @@
                 </div>
                 <div class="col-md-3">
                     <ul class="list-unstyled footer-link">
-                        <li><span class="mr-3 d-block">Address:</span><span class="text-white">34 Street Name, City Name Here, United States</span></li>
-                        <li><span class="mr-3 d-block">Phone:</span><span class="text-white">+63 987 654 3210</span></li>
-                        <li><span class="mr-3 d-block">E-mail:</span><span class="text-white"><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0e676068614e77617b7c6a61636f6760206d6163">[email&#160;protected]</a></span></li>
+                        <li>
+                            <span class="mr-3 d-block">Address:</span>
+                            <span class="text-white">
+                                Empress St. cor. Duchess St., Empress <br>
+                                Subdivision, Brgy San Isidro, <br>
+                                Antipolo City Rizal, 1870
+                            </span>
+                        </li>
+                        <li>
+                            <span class="mr-3 d-block">Phone:</span>
+                            <span class="text-white">09970848557 <br> 09270444766 <br> 09693222077</span>
+                        </li>
+                        <li><span class="mr-3 d-block">E-mail:</span><span class="text-white">plmconstructioncorp@gmail.com</span></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h3 class="text-white">Quick Links</h3>
                     <ul class="list-unstyled footer-link">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Works</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" data-href="home" class="scroller">Home</a></li>
+                        <li><a href="#" data-href="projects" class="scroller">Projects</a></li>
+                        <li><a href="#" data-href="services" class="scroller">Services</a></li>
+                        <li><a href="#" data-href="contact" class="scroller">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">

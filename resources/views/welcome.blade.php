@@ -28,7 +28,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand position-absolute" href="{{ asset('/') }}">
-                    <img src="{{ asset('images/test_logo_mini.png') }}" alt="Header Logo">
+                    {{-- <img src="{{ asset('images/test_logo_mini.png') }}" alt="Header Logo"> --}}
+                    <img src="{{ asset('images/logo.png') }}" width="50px" height="50px" alt="Header Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -406,7 +407,7 @@
                         </li>
                         <li>
                             <span class="mr-3 d-block">Phone:</span>
-                            <span class="text-white">09970848557 / 09270444766 / 09693222077</span>
+                            <span class="text-white">09970848557 <br> 09270444766 <br> 09693222077</span>
                         </li>
                         <li><span class="mr-3 d-block">E-mail:</span><span class="text-white">plmconstructioncorp@gmail.com</span></li>
                     </ul>
