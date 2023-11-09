@@ -30,9 +30,9 @@
                 <div class="collapse navbar-collapse position-relative" id="navbarsExample05">
                     <ul class="navbar-nav mx-auto pl-lg-5 pl-0 d-flex align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link scroller active" href="#" data-href="home">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        {{-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown04">
                                 <a class="dropdown-item" href="services.html">Pre-Construction</a>
@@ -40,18 +40,15 @@
                                 <a class="dropdown-item" href="services.html">House Renovation</a>
                                 <a class="dropdown-item" href="services.html">Plumbing</a>
                             </div>
+                        </li> --}}
+                        <li class="nav-item">
+                            <a class="nav-link scroller" href="#" data-href="projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="works.html">Projects</a>
+                            <a class="nav-link scroller" href="#" data-href="services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="news.html">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link scroller" href="#" data-href="contact">Contact</a>
                         </li>
                         <li class="nav-item cta-btn2">
                             <a class="nav-link" href="{{ route('get-quote') }}">
@@ -63,36 +60,42 @@
             </div>
         </nav>
     </header>
-    <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image: url('{{ asset('welcome/img/slider-2.jpg') }}');">
+    <section class="home-slider owl-carousel" id="home">
+        <div class="slider-item" style="background-image: url('{{ asset('welcome/img/bg1.jpg') }}');">
             <div class="container">
                 <div class="row slider-text align-items-center justify-content-center text-center">
                     <div class="col-md-7 col-sm-12 element-animate">
-                        <h1 class="mb-4"> Fastest-Growing Construction Company</h1>
-                        <p class="mb-0"><a href="#" target="_blank" class="btn btn-primary">Get Started</a></p>
+                        <h1 class="mb-4" style="text-shadow: 2px 2px black;">
+                            <span style="color: #f79a7a;">
+                                Your One Stop
+                            </span>
+                            <br>
+                            For All Your Construction Projects
+                        </h1>
+                        {{-- <p class="mb-0"><a href="#" target="_blank" class="btn btn-primary">Get Started</a></p> --}}
                     </div>
                 </div>
             </div>
         </div>
-        <div class="slider-item" style="background-image: url('{{ asset('welcome/img/slider-1.jpg') }}');">
+        <div class="slider-item" style="background-image: url('{{ asset('welcome/img/bg2.jpg') }}');">
             <div class="container">
                 <div class="row slider-text align-items-center justify-content-center text-center">
                     <div class="col-md-8 col-sm-12 element-animate">
-                        <h1 class="mb-4">We Are Leading The Way Construction Works</h1>
-                        <p class="mb-0"><a href="#" target="_blank" class="btn btn-primary">Get Started</a></p>
+                        {{-- <h1 class="mb-4" style="text-shadow: 2px 2px black; color: #37fdfc;">Complete Construction Services</h1> --}}
+                        {{-- <p class="mb-0"><a href="#" target="_blank" class="btn btn-primary">Get Started</a></p> --}}
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section bg-light">
+    <section class="section bg-light" id="">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 pr-lg-5 mb-5 mb-md-0  element-animate">
-                    <div class="pr-lg-5">
-                        <h2 class="text-uppercase heading border-bottom mb-4 text-left">We Are Expert in <br>Construction Field</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam similique repellat dignissimos, omnis at ducimus pariatur odio praesentium eveniet porro sit quod, sequi unde atque magnam voluptate quae voluptatum. Delectus.</p>
-                        <p>At sed impedit, ab a officia blanditiis, fuga commodi delectus veniam architecto in nihil numquam eum maiores. Amet nihil, dolorum sit vitae fugit maxime earum optio culpa eum. Voluptates, labore.</p>
+                    <div class="pr-lg-5" style="text-align: justify;">
+                        <h2 class="text-uppercase heading border-bottom mb-4 text-left">Our Approach</h2>
+                        <p>Our approach to construction is rooted in a commitment to quality, integrity, and collaboration. We work closely with our clients and employees to create a seamless and transparent process. </p>
+                        <p>From initial planning and design to on-site construction and project management, we maintain open lines of communication to ensure that your vision is realized to perfection.</p>
                     </div>
                 </div>
                 <div class="col-md-6  element-animate">
@@ -101,12 +104,12 @@
             </div>
         </div>
     </section>
-    <section class="section border-t">
+    <section class="section border-t" id="projects">
         <div class="container">
             <div class="row justify-content-center mb-5 element-animate">
                 <div class="col-md-8 text-center">
                     <h2 class="text-uppercase heading border-bottom mb-4">Recent Projects</h2>
-                    <p class="mb-3 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+                    <p class="mb-3 lead">Explore our portfolio to witness the diversity and caliber of our completed projects. From residential remodels to large-scale commercial constructions, each endeavor showcases our dedication to excellence. We take pride in the lasting impact our work has on communities and the satisfaction it brings to our clients.</p>
                     <p><a href="works.html" class="btn btn-primary">See All Projects</a></p>
                 </div>
             </div>
@@ -156,12 +159,12 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="section" id="services">
         <div class="container">
             <div class="row justify-content-center mb-5 element-animate">
                 <div class="col-md-8 text-center">
                     <h2 class="text-uppercase heading border-bottom mb-4">Services</h2>
-                    <p class="mb-3 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+                    <p class="mb-3 lead" style="text-align: justify;">At PLM Construction Corp, we offer a comprehensive range of construction services tailored to meet your specific needs. Whether you're planning a residential, commercial, or industrial project, our expertise spans across design-build, remodeling, concrete work, electrical, lighting, and many more. With a focus on precision, safety, and innovation, we ensure that every project is executed with the highest level of craftsmanship.</p>
                 </div>
             </div>
             <div class="row mb-5">
@@ -170,8 +173,8 @@
                         <span class="flaticon-blueprint icon"></span>
                         <div class="media-body">
                             <h3 class="mt-0 text-black">Pre-Construction</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                            <p>Offering services like feasibility studies, site analysis, cost estimation, and project planning before the actual construction begins.</p>
+                            {{-- <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p> --}}
                         </div>
                     </div>
                 </div>
@@ -180,8 +183,8 @@
                         <span class="flaticon-building-1 icon"></span>
                         <div class="media-body">
                             <h3 class="mt-0 text-black">House Renovation</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                            <p>Building and renovating houses, office buildings, retail spaces, restaurants, warehouses and custom-designed residences.</p>
+                            {{-- <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p> --}}
                         </div>
                     </div>
                 </div>
@@ -190,17 +193,17 @@
                         <span class="flaticon-crane icon"></span>
                         <div class="media-body">
                             <h3 class="mt-0 text-black">General Contracting</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                            <p>Overseeing the entire construction project, including coordinating subcontractors, managing schedules, and ensuring the project is completed on time and within budget.</p>
+                            {{-- <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p> --}}
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center element-animate">
+            {{-- <div class="row justify-content-center element-animate">
                 <div class="col-md-4">
                     <p><a href="services.html" class="btn btn-primary btn-block">View All Services</a></p>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 
@@ -336,8 +339,8 @@
         <div class="container">
             <div class="row justify-content-center mb-5 element-animate">
                 <div class="col-md-8 text-center mb-5">
-                    <h2 class="text-uppercase heading border-bottom mb-4">Happy Customer Says</h2>
-                    <p class="mb-0 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+                    <h2 class="text-uppercase heading border-bottom mb-4">Testimonials</h2>
+                    <p class="mb-0 lead">Don't just take our word for it. Hear what our satisfied clients have to say about their experience with us. Read through our testimonials to gain insights into the quality of our work and the level of satisfaction we consistently deliver.</p>
                 </div>
             </div>
             <div class="row">
@@ -366,7 +369,7 @@
             </div>
         </div>
     </section>
-    <section class="container cta-overlap">
+    <section class="container cta-overlap" id="contact">
         <div class="text d-flex">
             <h2 class="h3">Contact Us For Projects or Need a Quotations</h2>
             <div class="ml-auto btn-wrap">
@@ -424,5 +427,16 @@
     <script src="{{ asset('welcome/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('welcome/js/jquery.waypoints.min.js') }}"></script>
     <script src="{{ asset('welcome/js/main.js') }}"></script>
+
+    <script>
+        $(document).ready(function(){
+            // When the button is clicked
+            $('.scroller').click(function(e){
+                $('html, body').animate({
+                    scrollTop: $('#' + e.target.dataset.href).offset().top
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 </html>
