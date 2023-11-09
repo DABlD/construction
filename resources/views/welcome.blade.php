@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>PLM Construction Company</title>
+    <title>PLM Construction Corporation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=K2D:400,700|Niramit:300,700" rel="stylesheet">
