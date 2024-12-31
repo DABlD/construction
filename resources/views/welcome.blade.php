@@ -189,12 +189,12 @@
                 </div>
             </div>
             <div class="row no-gutters">
-                @for($i = 1; $i <= 5; $i++)
+                @for($i = 1; $i <= 9; $i++)
                     <div class="col-md-3 element-animate">
                         <a class="link-thumbnail">
                             {{-- <h3>House Renovation</h3> --}}
                             {{-- <span class="ion-plus icon"></span> --}}
-                            <img src="{{ asset('images/cert' . $i . '.jpg') }}" alt="Image" class="img-fluid">
+                            <img src="{{ asset('images/cert' . $i . '.jpg') }}" alt="Image" class="img-fluid" style="width: 333px; height: 221px;">
                         </a>
                     </div>
                 @endfor
