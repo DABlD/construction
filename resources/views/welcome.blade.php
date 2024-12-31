@@ -148,13 +148,32 @@
             <div class="row align-items-center">
                 <div class="col-md-6 pr-lg-5 mb-5 mb-md-0  element-animate">
                     <div class="pr-lg-5" style="text-align: justify;">
-                        <h2 class="text-uppercase heading border-bottom mb-4 text-left">Our Approach</h2>
-                        <p>Our approach to construction is rooted in a commitment to quality, integrity, and collaboration. We work closely with our clients and employees to create a seamless and transparent process. </p>
-                        <p>From initial planning and design to on-site construction and project management, we maintain open lines of communication to ensure that your vision is realized to perfection.</p>
+                        <h2 class="text-uppercase heading border-bottom mb-4 text-left">About Us</h2>
+                        <p>
+                            DASJAN Construction Services was established on May 2019. Built from concrete foundation of trust, optimism and reliability. Backed by 23 years in the construction and project management of fastfood chains.
+                        </p>
+
+                        <p>
+                            Here at DCS, we are always hands-on. Continuously inspecting and analyzing the project to ensure quality.
+                        </p>
+
+                        <p>
+                            DCS employs experienced industry professional with proven track records to ensure quality. We provide services such as Installation, Maintenance, Repairs, Plumbing, Electrical, Water Proofing, Painting Carpentry, Tiling, Demotion, General Cleaning Fit-out and much more... 
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <img src="{{ asset('images/bg3.jpg') }}" alt class="img-fluid" height="150%">
                     </div>
                 </div>
                 <div class="col-md-6 element-animate">
-                    <img src="{{ asset('images/bg3.jpg') }}" alt class="img-fluid" height="150%">
+                    <img src="{{ asset('images/i5.jpg') }}" alt class="img-fluid" height="150%">
+
+                    <br>
+                    <br>
+
+                    <img src="{{ asset('images/i6.jpg') }}" alt class="img-fluid" height="150%">
                 </div>
             </div>
         </div>
@@ -189,7 +208,7 @@
                 </div>
             </div>
             <div class="row no-gutters">
-                @for($i = 1; $i <= 9; $i++)
+                @for($i = 1; $i <= 10; $i++)
                     <div class="col-md-3 element-animate">
                         <a class="link-thumbnail">
                             {{-- <h3>House Renovation</h3> --}}
