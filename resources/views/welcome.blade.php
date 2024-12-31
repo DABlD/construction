@@ -71,6 +71,9 @@
                         <li class="nav-item">
                             <a class="nav-link scroller" href="#" data-href="contact">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroller" href="#" data-href="certificates">Certificates</a>
+                        </li>
                         <li class="nav-item cta-btn2">
                             {{-- <a class="nav-link" href="{{ route('get-quote') }}"> --}}
                             <a class="nav-link contactus">
@@ -156,22 +159,42 @@
             </div>
         </div>
     </section>
-    <section class="section border-t" id="projects">
+    <section class="section border-t w-images" id="projects">
         <div class="container">
             <div class="row justify-content-center mb-5 element-animate">
                 <div class="col-md-8 text-center">
                     <h2 class="text-uppercase heading border-bottom mb-4">Recent Projects</h2>
                     <p class="mb-3 lead">Explore our portfolio to witness the diversity and caliber of our completed projects. From residential remodels to large-scale commercial constructions, each endeavor showcases our dedication to excellence. We take pride in the lasting impact our work has on communities and the satisfaction it brings to our clients.</p>
-                    <p><a href="#" class="btn btn-primary">See All Projects</a></p>
+                    {{-- <p><a class="btn btn-primary">See All Projects</a></p> --}}
                 </div>
             </div>
             <div class="row no-gutters">
-                @for($i = 1; $i <= 32; $i++)
+                @for($i = 1; $i <= 44; $i++)
                     <div class="col-md-3 element-animate">
                         <a class="link-thumbnail">
                             {{-- <h3>House Renovation</h3> --}}
                             {{-- <span class="ion-plus icon"></span> --}}
-                            <img src="{{ asset('images/i' . $i . '.jpg') }}" alt="Image" class="img-fluid">
+                            <img src="{{ asset('images/i' . $i . '.jpg') }}" alt="Image" class="img-fluid" style="width: 333px; height: 221px;">
+                        </a>
+                    </div>
+                @endfor
+            </div>
+        </div>
+    </section>
+    <section class="section border-t w-images" id="certificates">
+        <div class="container">
+            <div class="row justify-content-center mb-5 element-animate">
+                <div class="col-md-8 text-center">
+                    <h2 class="text-uppercase heading border-bottom mb-4">Certificates</h2>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                @for($i = 1; $i <= 5; $i++)
+                    <div class="col-md-3 element-animate">
+                        <a class="link-thumbnail">
+                            {{-- <h3>House Renovation</h3> --}}
+                            {{-- <span class="ion-plus icon"></span> --}}
+                            <img src="{{ asset('images/cert' . $i . '.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                 @endfor
@@ -560,6 +583,13 @@
                         }
                     })
                 }
+            })
+        });
+
+        $(document).ready(() =>{
+            $(".w-images .link-thumbnail").on("click", e => {
+                console.log($(e.target).find('img'));
+                $(e.target).find('img')[0].requestFullscreen();
             })
         });
     </script>
