@@ -48,6 +48,9 @@ class WelcomeController extends Controller
                 Email: $req->email <br>
                 Phone: $req->phone <br><br>
 
+                Company Name: $req->cname <br>
+                Position: $req->cposition <br><br>
+
                 Message: $req->message
             ";
 

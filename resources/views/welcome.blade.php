@@ -528,6 +528,20 @@
                     </div>
 
                     <div class="row">
+                        <div class="col-md-3">Company Name</div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="cu-cname" placeholder="(Optional)">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">Position</div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="cu-cposition" placeholder="(Optional)">
+                        </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-md-3">Project Details</div>
                         <div class="col-md-8">
                             <textarea class="form-control" id="cu-message" placeholder="Enter Details" cols="30" rows="10" style="height: 180px;"></textarea>
@@ -540,6 +554,8 @@
                     let email = $('#cu-email').val();
                     let subject = $('#cu-subject').val();
                     let message = $('#cu-message').val();
+                    let cname = $('#cu-cname').val();
+                    let cposition = $('#cu-cposition').val();
                     let consent = $('#cu-consent').is(":checked");
 
                     if(name == "" || phone == "" || email == "" || subject == "" || message == ""){
@@ -555,6 +571,8 @@
                 let email = $('#cu-email').val();
                 let subject = $('#cu-subject').val();
                 let message = $('#cu-message').val();
+                let cname = $('#cu-cname').val();
+                let cposition = $('#cu-cposition').val();
                 // let consent = $('#cu-consent').is(":checked");
 
                 if(result.value){
@@ -569,6 +587,8 @@
                             email: email,
                             subject: subject,
                             message: message,
+                            cname: cname,
+                            cposition: cposition,
                             // consent: 1
                         },
                         success: result => {
