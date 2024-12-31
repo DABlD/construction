@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>PLM Construction Corporation</title>
+    <title>DASJAN Construction Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=K2D:400,700|Niramit:300,700" rel="stylesheet">
@@ -84,7 +84,37 @@
                 </div>
             </div>
         </div>
-        <div class="slider-item" style="background-image: url('{{ asset('welcome/img/bg2.jpg') }}');">
+        <div class="slider-item" style="background-image: url('{{ asset('images/sketch.jpg') }}');">
+            <div class="container">
+                <div class="row slider-text align-items-center justify-content-center text-center">
+                    <div class="col-md-8 col-sm-12 element-animate">
+                        {{-- <h1 class="mb-4" style="text-shadow: 2px 2px black; color: #37fdfc;">Complete Construction Services</h1> --}}
+                        {{-- <p class="mb-0"><a href="#" target="_blank" class="btn btn-primary">Get Started</a></p> --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item" style="background-image: url('{{ asset('images/sketch2.jpg') }}');">
+            <div class="container">
+                <div class="row slider-text align-items-center justify-content-center text-center">
+                    <div class="col-md-8 col-sm-12 element-animate">
+                        {{-- <h1 class="mb-4" style="text-shadow: 2px 2px black; color: #37fdfc;">Complete Construction Services</h1> --}}
+                        {{-- <p class="mb-0"><a href="#" target="_blank" class="btn btn-primary">Get Started</a></p> --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item" style="background-image: url('{{ asset('images/sketch3.jpg') }}');">
+            <div class="container">
+                <div class="row slider-text align-items-center justify-content-center text-center">
+                    <div class="col-md-8 col-sm-12 element-animate">
+                        {{-- <h1 class="mb-4" style="text-shadow: 2px 2px black; color: #37fdfc;">Complete Construction Services</h1> --}}
+                        {{-- <p class="mb-0"><a href="#" target="_blank" class="btn btn-primary">Get Started</a></p> --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item" style="background-image: url('{{ asset('images/sketch4.jpg') }}');">
             <div class="container">
                 <div class="row slider-text align-items-center justify-content-center text-center">
                     <div class="col-md-8 col-sm-12 element-animate">
@@ -105,8 +135,8 @@
                         <p>From initial planning and design to on-site construction and project management, we maintain open lines of communication to ensure that your vision is realized to perfection.</p>
                     </div>
                 </div>
-                <div class="col-md-6  element-animate">
-                    <img src="{{ asset('welcome/img/work_thumb_1.jpg') }}" alt class="img-fluid">
+                <div class="col-md-6 element-animate">
+                    <img src="{{ asset('images/bg3.jpg') }}" alt class="img-fluid" height="150%">
                 </div>
             </div>
         </div>
@@ -117,52 +147,19 @@
                 <div class="col-md-8 text-center">
                     <h2 class="text-uppercase heading border-bottom mb-4">Recent Projects</h2>
                     <p class="mb-3 lead">Explore our portfolio to witness the diversity and caliber of our completed projects. From residential remodels to large-scale commercial constructions, each endeavor showcases our dedication to excellence. We take pride in the lasting impact our work has on communities and the satisfaction it brings to our clients.</p>
-                    <p><a href="works.html" class="btn btn-primary">See All Projects</a></p>
+                    <p><a href="#" class="btn btn-primary">See All Projects</a></p>
                 </div>
             </div>
             <div class="row no-gutters">
-                <div class="col-md-4 element-animate">
-                    <a href="works-single.html" class="link-thumbnail">
-                        <h3>House Renovation</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="{{ asset('welcome/img/work_thumb_1.jpg') }}" alt="Image placeholder" class="img-fluid">
-                    </a>
-                </div>
-                <div class="col-md-4 element-animate">
-                    <a href="works-single.html" class="link-thumbnail">
-                        <h3>General Construction Building</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="{{ asset('welcome/img/work_thumb_2.jpg') }}" alt="Image placeholder" class="img-fluid">
-                    </a>
-                </div>
-                <div class="col-md-4 element-animate">
-                    <a href="works-single.html" class="link-thumbnail">
-                        <h3>Pre-Construction</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="{{ asset('welcome/img/work_thumb_3.jpg') }}" alt="Image placeholder" class="img-fluid">
-                    </a>
-                </div>
-                <div class="col-md-4 element-animate">
-                    <a href="works-single.html" class="link-thumbnail">
-                        <h3>House Renovation</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="{{ asset('welcome/img/work_thumb_3.jpg') }}" alt="Image placeholder" class="img-fluid">
-                    </a>
-                </div>
-                <div class="col-md-4 element-animate">
-                    <a href="works-single.html" class="link-thumbnail">
-                        <h3>General Construction Building</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="{{ asset('welcome/img/work_thumb_1.jpg') }}" alt="Image placeholder" class="img-fluid">
-                    </a>
-                </div>
-                <div class="col-md-4 element-animate">
-                    <a href="works-single.html" class="link-thumbnail">
-                        <h3>Pre-Construction</h3>
-                        <span class="ion-plus icon"></span>
-                        <img src="{{ asset('welcome/img/work_thumb_2.jpg') }}" alt="Image placeholder" class="img-fluid">
-                    </a>
-                </div>
+                @for($i = 1; $i <= 28; $i++)
+                    <div class="col-md-3 element-animate">
+                        <a class="link-thumbnail">
+                            {{-- <h3>House Renovation</h3> --}}
+                            {{-- <span class="ion-plus icon"></span> --}}
+                            <img src="{{ asset('images/i' . $i . '.jpg') }}" alt="Image" class="img-fluid">
+                        </a>
+                    </div>
+                @endfor
             </div>
         </div>
     </section>
@@ -171,7 +168,7 @@
             <div class="row justify-content-center mb-5 element-animate">
                 <div class="col-md-8 text-center">
                     <h2 class="text-uppercase heading border-bottom mb-4">Services</h2>
-                    <p class="mb-3 lead" style="text-align: justify;">At PLM Construction Corp, we offer a comprehensive range of construction services tailored to meet your specific needs. Whether you're planning a residential, commercial, or industrial project, our expertise spans across design-build, remodeling, concrete work, electrical, lighting, and many more. With a focus on precision, safety, and innovation, we ensure that every project is executed with the highest level of craftsmanship.</p>
+                    <p class="mb-3 lead" style="text-align: justify;">We offer a comprehensive range of construction services tailored to meet your specific needs. Whether you're planning a residential, commercial, or industrial project, our expertise spans across design-build, remodeling, concrete work, electrical, lighting, and many more. With a focus on precision, safety, and innovation, we ensure that every project is executed with the highest level of craftsmanship.</p>
                 </div>
             </div>
             <div class="row mb-5">
@@ -392,7 +389,7 @@
                         Copyright &copy;<script>
                         document.write(new Date().getFullYear());
 
-                        </script> All rights reserved | PLM Construction Corporation
+                        </script> All rights reserved | DASJAN Construction Services
                     </p>
                 </div>
                 <div class="col-md-3">
@@ -400,16 +397,15 @@
                         <li>
                             <span class="mr-3 d-block">Address:</span>
                             <span class="text-white">
-                                Empress St. cor. Duchess St., Empress <br>
-                                Subdivision, Brgy San Isidro, <br>
-                                Antipolo City Rizal, 1870
+                                Block 82 Lot 23 Phase 4 Mabuhay City <br>
+                                Paliparan 3, Dasmarinas, Cavite 4114
                             </span>
                         </li>
                         <li>
                             <span class="mr-3 d-block">Phone:</span>
-                            <span class="text-white">09970848557 <br> 09270444766 <br> 09693222077</span>
+                            <span class="text-white">09776594858</span>
                         </li>
-                        <li><span class="mr-3 d-block">E-mail:</span><span class="text-white">plmconstructioncorp@gmail.com</span></li>
+                        <li><span class="mr-3 d-block">E-mail:</span><span class="text-white">dasjanconstructionservices@gmail.com</span></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -424,10 +420,10 @@
                 <div class="col-md-3">
                     <h3 class="text-white">Social</h3>
                     <ul class="list-unstyled footer-link d-flex footer-social">
-                        <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
-                        <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
-                        <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
-                        <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+                        {{-- <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li> --}}
+                        <li><a href="https://web.facebook.com/amadino.mendoza" target="_blank" class="p-2"><span class="fa fa-facebook"></span></a></li>
+                        {{-- <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li> --}}
+                        {{-- <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li> --}}
                     </ul>
                 </div>
             </div>
