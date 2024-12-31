@@ -22,9 +22,6 @@ class WelcomeController extends Controller
     }
 
     public function sendEmail(Request $req){
-    }
-
-    public function sendEmail(Request $req){
         require base_path("vendor/autoload.php");
 
         $mail = new PHPMailer(true);     // Passing `true` enables exceptions

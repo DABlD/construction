@@ -74,7 +74,7 @@
                         <li class="nav-item cta-btn2">
                             {{-- <a class="nav-link" href="{{ route('get-quote') }}"> --}}
                             <a class="nav-link contactus">
-                                <span class="d-inline-block px-4 py-2 border" style="background-color: beige; font-weight: bold;">Quotation</span>
+                                <span class="d-inline-block px-4 py-2 border" style="background-color: beige; font-weight: bold; cursor: pointer;">Quotation</span>
                             </a>
                         </li>
                     </ul>
@@ -392,7 +392,7 @@
         <div class="text d-flex">
             <h2 class="h3">Contact Us For Projects or Need a Quotations</h2>
             <div class="ml-auto btn-wrap">
-                <a href="{{ route('get-quote') }}" class="btn-cta btn btn-outline-white">Get A Quote</a>
+                <a class="btn-cta btn btn-outline-white contactus">Get A Quote</a>
             </div>
         </div>
     </section>
@@ -534,7 +534,7 @@
                 let message = $('#cu-message').val();
                 // let consent = $('#cu-consent').is(":checked");
 
-                if(result){
+                if(result.value){
                     $.ajax({
                         url: "{{ route('sendEmail') }}",
                         beforeSend: () => {
