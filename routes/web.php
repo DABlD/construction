@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', "WelcomeController@index")->name("/");
 Route::get('get-quote', "WelcomeController@getQuote")->name('get-quote');
+Route::get('sendEmail', "WelcomeController@sendEmail")->name('sendEmail');
 
 // Route::get('/', function(){
 //     return redirect()->route('login');

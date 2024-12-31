@@ -15,9 +15,23 @@
     <link rel="stylesheet" href="{{ asset('welcome/fonts/fontawesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('welcome/fonts/flaticon/font/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('welcome/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/sweetalert2.min.css') }}">
 
     <style>
         .scroller{
+            font-weight: bold;
+        }
+
+        #swal2-html-container{
+            overflow: hidden;
+        }
+
+        .row{
+            margin-bottom: 20px;
+        }
+
+        .col-md-3{
+            text-align: left;
             font-weight: bold;
         }
     </style>
@@ -58,7 +72,8 @@
                             <a class="nav-link scroller" href="#" data-href="contact">Contact</a>
                         </li>
                         <li class="nav-item cta-btn2">
-                            <a class="nav-link" href="{{ route('get-quote') }}">
+                            {{-- <a class="nav-link" href="{{ route('get-quote') }}"> --}}
+                            <a class="nav-link contactus">
                                 <span class="d-inline-block px-4 py-2 border" style="background-color: beige; font-weight: bold;">Quotation</span>
                             </a>
                         </li>
@@ -440,6 +455,7 @@
     <script src="{{ asset('welcome/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('welcome/js/jquery.waypoints.min.js') }}"></script>
     <script src="{{ asset('welcome/js/main.js') }}"></script>
+    <script src="{{ asset('js/sweetalert2.min.js') }}"></script>
 
     <script>
         $(document).ready(function(){
@@ -449,6 +465,102 @@
                     scrollTop: $('#' + e.target.dataset.href).offset().top
                 }, 1000);
             });
+        });
+
+        $('.contactus').on('click', () => {
+            Swal.fire({
+                title: "Contact Us",
+                confirmButtonText: "Send Message",
+                confirmButtonColor: "#009cd5",
+                cancelButtonColor: "#EB6D56",
+                showCancelButton: true,
+                width: "700px",
+                html: `
+                    <div class="row">
+                        <div class="col-md-3">Name</div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="cu-name" placeholder="Enter Name">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">Phone</div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="cu-phone" placeholder="Enter Phone">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">Email</div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="cu-email" placeholder="Enter Email">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">Subject</div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="cu-subject" placeholder="Enter Subject">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">Project Details</div>
+                        <div class="col-md-8">
+                            <textarea class="form-control" id="cu-message" placeholder="Enter Details" cols="30" rows="10" style="height: 180px;"></textarea>
+                        </div>
+                    </div>
+                `,
+                preConfirm: () => {
+                    let name = $('#cu-name').val();
+                    let phone = $('#cu-phone').val();
+                    let email = $('#cu-email').val();
+                    let subject = $('#cu-subject').val();
+                    let message = $('#cu-message').val();
+                    let consent = $('#cu-consent').is(":checked");
+
+                    if(name == "" || phone == "" || email == "" || subject == "" || message == ""){
+                        Swal.showValidationMessage("Please fill all details");
+                    }
+                    // else if(!consent){
+                    //     Swal.showValidationMessage("You must agree and check that you give consent to use your contact information.");
+                    // }
+                }
+            }).then(result => {
+                let name = $('#cu-name').val();
+                let phone = $('#cu-phone').val();
+                let email = $('#cu-email').val();
+                let subject = $('#cu-subject').val();
+                let message = $('#cu-message').val();
+                // let consent = $('#cu-consent').is(":checked");
+
+                if(result){
+                    $.ajax({
+                        url: "{{ route('sendEmail') }}",
+                        beforeSend: () => {
+                            Swal.showLoading();
+                        },
+                        data: {
+                            name: name,
+                            phone: phone,
+                            email: email,
+                            subject: subject,
+                            message: message,
+                            // consent: 1
+                        },
+                        success: result => {
+                            if(result){
+                                Swal.fire({
+                                    icon: "success",
+                                    title: "Successfully sent message",
+                                    text: "Thank you for reaching out. We've received your message and will get back to you as promptly as possible. Your patience is greatly appreciated.",
+                                    confirmButtonColor: "#009cd5"
+                                })
+                            }
+                        }
+                    })
+                }
+            })
         });
     </script>
 </body>
