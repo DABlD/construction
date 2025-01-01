@@ -180,13 +180,30 @@
             <br>
             <div class="row align-items-center">
                 <div class="col-md-6 element-animate">
-                    <img src="{{ asset('images/mission1.jpg') }}" alt class="img-fluid" height="150%">
+                    <img src="{{ asset('images/vision1.jpg') }}" alt class="img-fluid" height="150%">
 
                     <br>
                     <br>
 
-                    <img src="{{ asset('images/mission2.jpg') }}" alt class="img-fluid" height="150%">
+                    <img src="{{ asset('images/vision2.jpg') }}" alt class="img-fluid" height="150%">
                 </div>
+                <div class="col-md-6 pr-lg-5 mb-5 mb-md-0  element-animate">
+                    <div class="pr-lg-5" style="text-align: justify;">
+                        <h2 class="text-uppercase heading border-bottom mb-4 text-left">Vision</h2>
+                        <p>
+                            Our vision is to become a well renowned and established Construction Services Company that offers good quality standard services and products. We aim to build ang grew a reputable brand within the industry and expand to other regions.
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <img src="{{ asset('images/vision3.jpg') }}" alt class="img-fluid" height="150%">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="row align-items-center">
                 <div class="col-md-6 pr-lg-5 mb-5 mb-md-0  element-animate">
                     <div class="pr-lg-5" style="text-align: justify;">
                         <h2 class="text-uppercase heading border-bottom mb-4 text-left">Mission</h2>
@@ -203,6 +220,14 @@
 
                         <img src="{{ asset('images/mission3.jpg') }}" alt class="img-fluid" height="150%">
                     </div>
+                </div>
+                <div class="col-md-6 element-animate">
+                    <img src="{{ asset('images/mission1.jpg') }}" alt class="img-fluid" height="150%">
+
+                    <br>
+                    <br>
+
+                    <img src="{{ asset('images/mission2.jpg') }}" alt class="img-fluid" height="150%">
                 </div>
             </div>
         </div>
@@ -237,7 +262,7 @@
                 </div>
             </div>
             <div class="row no-gutters">
-                @for($i = 1; $i <= 10; $i++)
+                @for($i = 1; $i <= 11; $i++)
                     <div class="col-md-3 element-animate">
                         <a class="link-thumbnail">
                             {{-- <h3>House Renovation</h3> --}}
@@ -285,6 +310,96 @@
                             <h3 class="mt-0 text-black">General Contracting</h3>
                             <p>Overseeing the entire construction project, including coordinating subcontractors, managing schedules, and ensuring the project is completed on time and within budget.</p>
                             {{-- <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p> --}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <img src="{{ asset('images/icon-wrench.png') }}"  width="50px" height="50px">
+                        <div class="media-body">
+                            <br>
+                            <h3 class="mt-0 text-black">T-runners,Solid,PVC Ceiling Works</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <img src="{{ asset('images/icon-wrench.png') }}"  width="50px" height="50px">
+                        <div class="media-body">
+                            <br>
+                            <h3 class="mt-0 text-black">Masonry / Tilling Works</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <img src="{{ asset('images/icon-wrench.png') }}"  width="50px" height="50px">
+                        <div class="media-body">
+                            <br>
+                            <h3 class="mt-0 text-black">Fit-out, Repairs, Make-over Works</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <img src="{{ asset('images/icon-wrench.png') }}"  width="50px" height="50px">
+                        <div class="media-body">
+                            <br>
+                            <h3 class="mt-0 text-black">Plumbing / Electrical Works</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <img src="{{ asset('images/icon-wrench.png') }}"  width="50px" height="50px">
+                        <div class="media-body">
+                            <br>
+                            <h3 class="mt-0 text-black">Carpentry / Painting Works</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <img src="{{ asset('images/icon-wrench.png') }}"  width="50px" height="50px">
+                        <div class="media-body">
+                            <br>
+                            <h3 class="mt-0 text-black">Toilet Partitions / Counter Works</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <img src="{{ asset('images/icon-wrench.png') }}"  width="50px" height="50px">
+                        <div class="media-body">
+                            <br>
+                            <h3 class="mt-0 text-black">ACP / WFC Installation Works</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <img src="{{ asset('images/icon-wrench.png') }}"  width="50px" height="50px">
+                        <div class="media-body">
+                            <br>
+                            <h3 class="mt-0 text-black">Demolition works</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <img src="{{ asset('images/icon-wrench.png') }}"  width="50px" height="50px">
+                        <div class="media-body">
+                            <br>
+                            <h3 class="mt-0 text-black">Modular Cabinets</h3>
                         </div>
                     </div>
                 </div>
@@ -436,11 +551,11 @@
             <div class="row">
                 <div class="col-md-6 element-animate">
                     <div class="media d-block media-testimonial text-center">
-                        <img src="{{ asset('welcome/img/person_1.jpg') }}" alt="Image placeholder" class="img-fluid mb-3">
-                        <p>Jane Doe, <a href="#">XYZ Inc.</a></p>
+                        <img src="{{ asset('images/default_avatar.png') }}" alt="Image placeholder" class="img-fluid mb-3">
+                        <p>Benny Bernabe, <a>Owner</a></p>
                         <div class="media-body">
                             <blockquote>
-                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.&rdquo;</p>
+                                <p>&ldquo;The overall project was completed based on target. The workers are skilled and know what they're doing. I think the key is consistent monitoring.&rdquo;</p>
                             </blockquote>
                         </div>
                     </div>
