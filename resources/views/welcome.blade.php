@@ -555,7 +555,7 @@
                         <p>Benny Bernabe, <a>Owner</a></p>
                         <div class="media-body">
                             <blockquote>
-                                <p>&ldquo;The overall project was completed based on target. The workers are skilled and know what they're doing. I think the key is consistent monitoring.&rdquo;</p>
+                                <p>&ldquo;The overall project was completed based on target. The workers are skilled and know what they're doing. I think the key is consistent monitoring. My only concern was that the total cost of the project was over my budget. I didn't expect charges on management. In general I was happy with the result of the project. Thanks Mads.&rdquo;</p>
                             </blockquote>
                         </div>
                     </div>
