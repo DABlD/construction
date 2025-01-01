@@ -176,6 +176,35 @@
                     <img src="{{ asset('images/i6.jpg') }}" alt class="img-fluid" height="150%">
                 </div>
             </div>
+
+            <br>
+            <div class="row align-items-center">
+                <div class="col-md-6 element-animate">
+                    <img src="{{ asset('images/mission1.jpg') }}" alt class="img-fluid" height="150%">
+
+                    <br>
+                    <br>
+
+                    <img src="{{ asset('images/mission2.jpg') }}" alt class="img-fluid" height="150%">
+                </div>
+                <div class="col-md-6 pr-lg-5 mb-5 mb-md-0  element-animate">
+                    <div class="pr-lg-5" style="text-align: justify;">
+                        <h2 class="text-uppercase heading border-bottom mb-4 text-left">Mission</h2>
+                        Dasjan strive to always provide quality products and services at an affordable and reasonable rate that suit the client/s.
+                        <br>
+                        Dasjan aim to ensure that our employees are treated with respect, equality, fairness and dignity at all times. 
+                        <br>
+                        Dasjan always finish & deliver quality work, finish our work at the expected time and provide reliable quality products. 
+                        <br>
+                        Our Client/s are the core foundation of our business. We ensure that all times we treat them with respect and dignity and deliver services to meet their expectation.
+
+                        <br>
+                        <br>
+
+                        <img src="{{ asset('images/mission3.jpg') }}" alt class="img-fluid" height="150%">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="section border-t w-images" id="projects">
