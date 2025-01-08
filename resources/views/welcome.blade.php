@@ -562,11 +562,16 @@
                 </div>
                 <div class="col-md-6 element-animate">
                     <div class="media d-block media-testimonial text-center">
-                        <img src="{{ asset('welcome/img/person_3.jpg') }}" alt="Image placeholder" class="img-fluid mb-3">
-                        <p>John Doe, <a href="#">XYZ Inc.</a></p>
+                        <img src="{{ asset('images/default_avatar.png') }}" alt="Image placeholder" class="img-fluid mb-3">
+                        <p>Rolan Mendoza, Unit Owner - The Columns Makati</p>
                         <div class="media-body">
                             <blockquote>
-                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.&rdquo;</p>
+                                <p>&ldquo;We had the opportunity to work with Dasjan construction led by Amadino Mendoza on our condo unit in Makati. From start to handover everything went smoothly and according to plan and design.
+
+                                <br>
+                                <br>
+
+                                Amadino was so professional in dealing with problems during construction and was able to solve minor and major problems easily because of his solid experience in the industry. We highly recommend his firm and we wish him more success on his future projects.&rdquo;</p>
                             </blockquote>
                         </div>
                     </div>
@@ -578,7 +583,7 @@
         <div class="text d-flex">
             <h2 class="h3">Contact Us For Projects or Need a Quotations</h2>
             <div class="ml-auto btn-wrap">
-                <a class="btn-cta btn btn-outline-white contactus">Get A Quote</a>
+                <a class="btn-cta btn btn-outline-white contactus" style="font-weight: bold; color: black;">Get A Quote</a>
             </div>
         </div>
     </section>
