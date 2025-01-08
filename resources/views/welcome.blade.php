@@ -242,7 +242,7 @@
                 </div>
             </div>
             <div class="row no-gutters">
-                @for($i = 1; $i <= 44; $i++)
+                @for($i = 1; $i <= 45; $i++)
                     <div class="col-md-3 element-animate">
                         <a class="link-thumbnail">
                             {{-- <h3>House Renovation</h3> --}}
@@ -262,7 +262,7 @@
                 </div>
             </div>
             <div class="row no-gutters">
-                @for($i = 1; $i <= 11; $i++)
+                @for($i = 1; $i <= 12; $i++)
                     <div class="col-md-3 element-animate">
                         <a class="link-thumbnail">
                             {{-- <h3>House Renovation</h3> --}}
