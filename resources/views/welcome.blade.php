@@ -242,7 +242,7 @@
                 </div>
             </div>
             <div class="row no-gutters">
-                @for($i = 1; $i <= 45; $i++)
+                @for($i = 1; $i <= 48; $i++)
                     <div class="col-md-3 element-animate">
                         <a class="link-thumbnail">
                             {{-- <h3>House Renovation</h3> --}}
@@ -549,7 +549,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 element-animate">
+                <div class="col-md-4 element-animate">
                     <div class="media d-block media-testimonial text-center">
                         <img src="{{ asset('images/default_avatar.png') }}" alt="Image placeholder" class="img-fluid mb-3">
                         <p>Benny Bernabe, <a>Owner</a></p>
@@ -560,7 +560,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 element-animate">
+                <div class="col-md-4 element-animate">
                     <div class="media d-block media-testimonial text-center">
                         <img src="{{ asset('images/default_avatar.png') }}" alt="Image placeholder" class="img-fluid mb-3">
                         <p>Rolan Mendoza, Unit Owner - The Columns Makati</p>
@@ -572,6 +572,17 @@
                                 <br>
 
                                 Amadino was so professional in dealing with problems during construction and was able to solve minor and major problems easily because of his solid experience in the industry. We highly recommend his firm and we wish him more success on his future projects.&rdquo;</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 element-animate">
+                    <div class="media d-block media-testimonial text-center">
+                        <img src="{{ asset('images/default_avatar.png') }}" alt="Image placeholder" class="img-fluid mb-3">
+                        <p>Annabelle Narciso, Owner</p>
+                        <div class="media-body">
+                            <blockquote>
+                                <p>&ldquo;We contracted DasJan Construction for an urgent renovation repair in our ceiling, toilet, and storage area.  Arch Mad was fast in responding and immediately started work as requested.  Although in our rush, there was lack of preparation to manage the effect of the works on our normal routine and exposed belongings, Arch Mad’s team worked efficiently with minimal punchlist and with good work quality.  It was good to note that the team was open to accept instructions and feedback.  We are a happy customer of DasJan Construction.&rdquo;</p>
                             </blockquote>
                         </div>
                     </div>
